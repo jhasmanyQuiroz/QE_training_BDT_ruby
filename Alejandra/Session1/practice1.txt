@@ -1,0 +1,15 @@
+ * What is ruby?
+
+Ruby is a scripting programming language better than others that are well-known such as javascript, perl, etc.
+It is not a new programming language, has more than twenty years since its first release, in these last years it has become too popular in the programmers comunity thanks to its flexibility, its easy way to learn and its quick way to be implemented, for that it's the best language for the testers that lately have to deal with automation tasks and save time in the scripting programming for the tests meanwhile they have to be focus in the application testing at the same time.  
+
+* What pros/cons you considered from the point explained in the class
+
+One of the cons, it's to make the code legible and understandable as the best way that we can, because ruby code should follow a guideline to make easier for another testers/programmers to get involved into the work and continue with the scripting because this language doesn't have any scripting rules to be implement, because supports whatever way of code implemention.
+
+For the other side, talking about its pros, it has many such as to not use (;) at the end, or not to have to declare the variables, and make the implementation of loops or iterations easily once you get familiar with the code, that's the hard part for some programmers that get used to follow some rules when to create methods.
+Other advantage it's to not need to import any library at the beginning and thanks to its popularity there is already code done and you just need to override some methods if you want update it without problems. 
+
+ * According what we talked today, what are the 3 testing tiers?
+
+Ruby could be extended to another tiers no only Api testing also services, backend and UI testing.
