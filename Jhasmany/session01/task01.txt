@@ -1,0 +1,17 @@
+1. What is Ruby?
+R. It is a script language, which facilitates the programmer because it focuses on how to solve the problem, is more expressive in its syntax, with dynamic typing, use of simpler iterators, etc. It is also a multipurpose language because you can develop desktop, web and mobile applications.
+
+2. What pros/cons you considered from the point explained in the class?
+R. Pros:
+    Script language, then is more powerfull.
+    Dinamic types.
+    Use a iterators.
+
+   Cons:
+    To use dynamic types, the language is more permissive.
+    It does not support multiple inheritance.
+
+3. According what we talked today, what are the 3 testing tiers?
+   Data tier: Is the area of Backend Testing.
+   Logic tier: Is the area of API testing.
+   Presentation tier: Is the area ofUI testing.
