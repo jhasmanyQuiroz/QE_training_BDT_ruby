@@ -1,0 +1,11 @@
+1. What is ruby?
+R. Ruby is scripting, weak typing, multi paradigm language, in ruby everything are a object. Ruby was build to be like a "natural" language, the instructions are read/write like you were talking in English.
+
+2. What pros/cons you considered from the point explained in the class
+R. Cons: as ruby is scripting any error will be through in execution time
+   Pros: fast to learn, have many already implemented methods to handle strings, numbers, arrays, etc.
+
+3. According what we talked today, what are the 3 testing tiers?
+R. 1. UI testing
+   2. API testing
+   3. Unit testing
