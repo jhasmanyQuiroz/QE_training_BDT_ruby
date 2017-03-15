@@ -1,0 +1,20 @@
+* Fork the repository
+* Add a text file with the answers to:
+    - What is ruby?
+	A: Ruby is a programmin language that can be exeuted in different platforms 
+           such as (Microsoft, Mac OS, Linux).
+	   It's a scripting lenguage.
+	   
+    - What pros/cons you considered from the point explained in the class
+	A: Pros:
+		- Easy to read
+		- We don't need define a type for a variable
+		- Same functionality with few lines of code than other programming languages
+		- We don't need include libraries or files, we can use gems
+	   Cons:
+		- 
+
+    - According what we talked today, what are the 3 testing tiers?
+	A: UI testing / Api testing / Dev code
+
+Note: I will add more pros and cons when interact more time with Ruby
