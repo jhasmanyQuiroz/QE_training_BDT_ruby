@@ -1,0 +1,7 @@
+  1) Ruby is a cross-platform interpreted language and also is a very flexile language, so the team who is going to use it need to define guidelines in order to make the code maintainable and readable.
+  
+  2) PROS, I highlight the "No more import files or classes to be used" due to in languages like javascript or python we neccessarily import all files and the most cases I had problems with the relative paths
+
+     CONS, I thing that is not a critical problem since we are working with an interpreted language and not with a compiled one, it is import to difine guidelines and code conventions.
+
+  3) The testing tiers are: UI , API and database
