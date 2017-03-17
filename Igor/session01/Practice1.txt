@@ -1,0 +1,19 @@
+What is ruby?
+Ruby is a programming language, not a new one it was created in the nineties, but recently its popularity increases a lot, it can be used for scripting tasks and also for any other general programming purpose, it is easy to learn and use and also allow us to perform our code in a very clean way.
+
+What pros/cons you considered from the point explained in the class
+
+Pros:
+- It is easy to use and learn
+- The code is more clean than other languages
+- There is a great supports community
+- you can reuse others works available on gems
+- No need to use imports in the code.
+
+Cons:
+- No alloy multiple Inheritances
+
+According what we talked today, what are the 3 testing tiers?
+- UI
+- REST services
+- Backend
