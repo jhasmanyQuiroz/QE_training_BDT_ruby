@@ -1,63 +1,26 @@
 =begin
-
-
-
-print "Hello"
-puts "#{1 + 2}"
-puts 1 + 2
-puts "Is it true that 3 + 2 < 5 - 7?"
-
-name = "Miguel"
-puts "Hello #{name}"
+4. Create a script with some variables that convert seconds in minutes, seconds
+in hours and second in days.
+* Do not just type in the measurements. Please work out the arithmetic in Ruby.
+* Create variable to assign the values
+* Use the variable name to print the result.
 =end
-# Arithmetic operators
-num1 = 10
-num2 = 5
-result = num1 + num2
-float1 = 10.0
-numy = num1;
-numx = num1 + 1;
 
-# Arithmetic operators
-print result
-print " = "
-print num1 + num2
-puts "\n#{result} = #{num1 + num2}"
+ConstMin = 60.0
+ConstHour = 60.0
+ConstDay = 24.0
 
-puts "Arithmetic operators"
-puts "===================="
-puts "num1 + num2 = #{num1 + num2}"
-puts "num1 - num2 = #{num1 - num2}"
-puts "num1 * num2 = #{num1 * num2}"
-puts "num1 / num2 = #{num1 / num2}"
-puts "num1 % num2 = #{num1 % num2}"
-puts "num1 ** num2 = #{num1 ** num2}"
+print "Insert seconds: "
+seconds = gets.to_i
 
-puts "Comparison operators"
-puts "===================="
-puts "num1 == num2: #{num1 == num2}"
-puts "num1 != num2: #{num1 != num2}"
-puts "num1 > num2: #{num1 > num2}"
-puts "num1 < num2: #{num1 < num2}"
-puts "num1 >= num2: #{num1 >= num2}"
-puts "num1 <= num2: #{num1 <= num2}"
+puts "seconds in minutes:"
+minutes = seconds / ConstMin
+puts "#{seconds} second(s) = #{minutes} minute(s)"
 
-puts "Comparison operators"
-puts "===================="
-puts "0<=>0: #{0<=>0}"
-puts "0<=>1: #{0<=>1}"
-puts "0<=>-1: #{0<=>-1}"
+puts "seconds in hours:"
+hours = minutes / ConstHour
+puts "#{seconds} second(s) = #{hours} hour(s)"
 
-puts "(1...10) === 5 : #{(1...10) === 5}"
-puts "(1...10) === 11 : #{(1...10) === 11}"
-
-puts "#{num1}.eql?(#{float1}) : #{num1.eql?(float1)}"
-puts "#{num1}.eql?(#{num1}) : #{num1.eql?(num1)}"
-
-puts num1.equal?(num1)
-puts num1.equal?(numx)
-puts num1.equal?(numy)
-
-puts num1
-puts numx
-puts numy
+puts "seconds in days:"
+days = hours / ConstDay
+puts "#{seconds} second(s) = #{days} day(s)"
