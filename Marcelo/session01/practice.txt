@@ -1,0 +1,17 @@
+1. What is ruby?
+Ruby is a programming language.
+
+
+2. What pros/cons you considered from the point explained in the class?
+- Pros:
+ - It is open source
+ - It is growing
+ - It has a huge community
+ - As it has many years there are many 'things' already implemented and they are easy to modify/addapt to our requirements.
+- Cons:
+ - It does not allow multiple inheritances
+ - As it is flexible when coding it is better to define the way we are going to do it.
+
+
+3. According what we talked today, what are the 3 testing tiers?
+I don't remember.
