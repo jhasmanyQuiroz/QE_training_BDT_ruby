@@ -1,0 +1,22 @@
+Name: Yesica Acha
+
+What is ruby?
+Ruby is a cross-platform interpreted language with a focus on simplicity, it is easy to use.
+It is very popular, even more than Perl and Python. Many virtualization tools like Vagrant are written in Ruby
+It was created by Yukihiro Matsumoto 22 years ago. 
+
+What pros/cons you considered from the point explained in the class
+*PROS:*
+There are not too much code conditions. It is flexible to use.
+It is not necessary to import files or classes to be used
+It is not necessary to include files/libraries.
+Since it is very popular, Ruby community is big and if we need something in some cases it is already implemented.
+It is a simple way to define code.
+It is easy to learn.
+
+*CONS:*
+It doesn't support multiple inheritance
+It is important to define the guidelines for the code with the team in order to have a readable code, and if someones else wants to modify it, that person could understand it.
+
+According what we talked today, what are the 3 testing tiers?
+The 3 testing tiers are Services, Backend and UI testing
