@@ -22,15 +22,19 @@
 # sec = "60"
 # puts sec*2
 
-a = [(1..5)]
-b = []
+# a = [(1..5)]
+# b = []
 
-(1..5).each do |x|
-        puts x
-    end
+# (1..5).each do |x|
+#         puts x
+#     end
 
+# # puts a
+
+# puts b.eql?a
+
+
+a = 4
+puts a = 7 if a == 4
 # puts a
-
-puts b.eql?a
-
 
