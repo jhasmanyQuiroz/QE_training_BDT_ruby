@@ -10,20 +10,22 @@ When you call the method, don’t use parenthesis
 After call the method don’t forget to print the value returned.
 =end
 
-print "Enter name: "
-name = gets.chomp
-print "Enter ticket"
-ticket = gets.chomp.to_f
-
-def dollarToBs dollar
-  dollar * 6.97
+def convertFromBsToDollar bs
+  currentChange=6.97
+  dollar=bs.to_f/currentChange
 end
 
-def printsPassenger(name,ticket,destination='CBBA')
+def printPassengerInfo(name,ticket,destination='CBBA')
+  puts 'Passenger Info:'
   puts "Name: #{name}"
   puts "Destination: #{destination}"
-  puts "ticket $#{ticket}"
-  dollarToBs ticket
+  puts "ticket: $#{convertFromBsToDollar ticket}"
+  puts ''
 end
 
-puts "#{printsPassenger name,ticket} Bs."
+printPassengerInfo 'Miguel','250','La Paz'
+printPassengerInfo 'Angel','278.9'
+printPassengerInfo 'Jimmy',150,'Oruro'
+printPassengerInfo 'Douglas',150
+printPassengerInfo 'Carla',350.6,'Tarija'
+printPassengerInfo 'Felipe',85.7
