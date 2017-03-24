@@ -1,13 +1,11 @@
-require_relative "modules_greets"
+require_relative 'modules_greets'
 
 class Practice
-    include Greets
-    include Greets2
-
-
+  include Greets
+  include Greets2
 end
 
-p=Practice.new
+p = Practice.new
 p.hi
 p.take_care
 p.good_night
