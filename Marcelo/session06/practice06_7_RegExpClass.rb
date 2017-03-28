@@ -23,13 +23,24 @@ class Practice
 	end
 	def amount_user_ids_match
 		the_number = ask_number
-		new_array = @my_hash.select {|key| key.include? the_number}.map {|key, value| key}
-		p new_array
+		new_array = @my_hash.select {|key| key.start_with? the_number}.map {|key, value| key}
 	end
 	def amount_user_names_match
 		the_char = ask_char
-		new_array = @my_hash.select {|value| value.include? the_char}.map {|key, value| value}
-		p new_array
+		new_array = @my_hash.select {|key, value| value.start_with? the_char}.map {|key, value| value}
+	end
+	def print_ranges
+		@my_hash.each do |key, value|
+			case key
+			when /^(25|[1-2][0-5]?)$/; print "#{key} between 1-25 'User belong Group 1'\n"
+			when /^(50|[3-4][0-9]|2[6-9])$/; print "#{key} between 26-50 'User belong Group 2'\n"
+			when /^(7[0-5]|[6-6][0-9]|5[1-9])$/; print "#{key} between 51-75 'User belong Group 3'\n"
+			else ; print "#{key} between 76-100 'User belong Group 4'\n"
+			end
+		end
+	end
+	def print_array the_array
+		p the_array
 	end
 	def ask_user_id
 		puts "Please enter a valid user id (only numbers between 1 to 100):"
@@ -71,5 +82,7 @@ class Practice
 end
 my_class = Practice.new
 my_class.create_the_hash
-# my_class.amount_user_ids_match
-my_class.amount_user_names_match
+p my_class.amount_user_ids_match
+p array_matches_names = my_class.amount_user_names_match
+my_class.print_ranges
+my_class.print_array array_matches_names
