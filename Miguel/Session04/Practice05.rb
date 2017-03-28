@@ -12,14 +12,25 @@ Tips : use the correct format of number (int? float?)
 =end
 
 def celciusToFahrenheit(celcius)
-  fahrenheit = (((9 * celcius.to_f ) /5) + 32)
+  fahrenheit = (((9 * celcius ) /5) + 32)
   return fahrenheit
 end
 
 def fahrenheitToCelcius(fahrenheit)
-  (5*(fahrenheit.to_f - 32))/9
+  (5*(fahrenheit - 32))/9
 end
 
+puts 'Convert from celcius to fahrenheit'
+print 'Insert celcius: '
+celcius = gets.chomp.to_f
+puts "celcius: #{celcius} to fahrenheit: #{celciusToFahrenheit(celcius)}"
 
+puts 'Convert from fahrenheit to celcius'
+print 'Insert fahrenheit: '
+fahrenheit = gets.chomp.to_f
+puts "fahrenheit: #{fahrenheit} to celcius: #{fahrenheitToCelcius fahrenheit}"
+
+=begin Test
 puts "celcius: 15.5 to fahrenheit: #{celciusToFahrenheit(15.5)}"
 puts "fahrenheit: 59.9 to celcius: #{fahrenheitToCelcius(59.9)}"
+=end

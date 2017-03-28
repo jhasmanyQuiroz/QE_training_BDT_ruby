@@ -1,0 +1,8 @@
+Let’s consider you are in a new team :
+Define which code guideline you would suggest for :
+Format (int, float, string)
+Classes
+Methods
+Variables, Getter/Setter
+If condition
+Please Add your suggestion and define one example for each one.
