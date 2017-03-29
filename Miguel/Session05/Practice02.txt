@@ -6,3 +6,15 @@ Methods
 Variables, Getter/Setter
 If condition
 Please Add your suggestion and define one example for each one.
+
+======================================================
+| Format  | Structure             | Samples          |
+======================================================
+| int     | nameOfVariable_int    | e.g. age_int     |
+| float   | nameOfVariable_float  | e.g. money_float |
+| string  | nameOfVariable_string | e.g. name_string |
+| Class   | NameOfClass           | e.g. Person      |
+| Method  | nameOfTheMethod       | e.g. clean       |
+| Get/Set | nameOfTheField        | e.g. status      |
+| If      | common if statement   |                  |
+======================================================
