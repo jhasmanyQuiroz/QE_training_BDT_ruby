@@ -3,6 +3,8 @@ require 'singleton'
 class Register
   include Singleton
   attr_accessor :register
+  attr_reader :id
+  attr_reader :userName
   def initialize
     @userName=nil
     @id=nil
@@ -10,15 +12,18 @@ class Register
   end
   def log message
     file = File.open('execution.log', 'a')
-    file.write("\n#{message}")
+    file.write("\n#{Time.now.strftime("%m/%d/%Y %H:%M:%S")}: #{message}")
     file.close
   end
   def askUserInfo
     log "method - askUserInfo"
-    print "Enter User Name: "
-    @id=gets.chomp
+    loop do
+      print "Enter User Name: "
+      @userName=gets.chomp
+      break if /^[a-z|0-9]{1,11}$/.match(@userName) ;
+    end
     print "Enter ID: "
-    @userName=gets.chomp
+    @id=gets.chomp
     @register[@id] = [@userName,""]
     log "User Added: #{@userName}, Id: #{@id}"
   end
@@ -77,7 +82,7 @@ class Register
   def askUserCalculation
     log "method - askUserCalculation"
     @register.each do |key, value|
-      print "Does user: #{value[0]} want to perform a convertions? "
+      print "Does user: #{value[0]} want to perform a convertions? [yes/no]: "
       answer = gets.chomp
       log "Ask User: #{key}"
       log "Answer: #{answer}"
@@ -99,3 +104,4 @@ Register.instance.askUserCalculation
 # Print users
 puts "User Name,Id,Convertion?"
 Register.instance.register.each{|k,v| puts "#{k},#{v[0]},#{v[1]}"}
+Register.instance.register.each{|k,v| Register.instance.log "#{k},#{v[0]},#{v[1]}"}
