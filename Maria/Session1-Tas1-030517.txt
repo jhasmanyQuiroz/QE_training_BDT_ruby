@@ -1,9 +1,0 @@
-I understood that Ruby is a interpreter language that is very flexible compared with other languajes, Also ruby is powerfull and I think that is for this that is growing its popularity.
-
-Pros:
- - Is very flexible, can be more easy to write code and the ';' is not a problem to work with ruby.
- - Does not need import class or libraries to work.
-Const:
- - If ruby is very flexible, also is important define some guides to not have messy code.
- - Ruby is a laguange that works with objets, but also have problems to works with multiple inheritance.
-
