@@ -1,0 +1,31 @@
+Define which code guideline you would suggest for :
+- Format (int, float, string)
+	age = 1
+	size = 9.45
+	name = "Lewis"
+	
+- Classes: Pascal case
+
+	class MySampleClass
+	end
+
+- Methods: lowercase_separated_by_underscores
+
+	method my_funny_method_name
+	end
+
+- Variables, Getter/Setter: lowercase_separated_by_underscores
+
+	attr_reader :color, :status_before
+	attr_writer :size
+	name = "something"
+	
+- If condition: lowercase
+
+	if conditional [then]
+		  code...
+	[elsif conditional [then]
+		  code...]...
+	[else
+		  code...]
+	end

@@ -1,0 +1,13 @@
+Q: What is ruby?
+A: Popular Scripting Language with many features easy to learn
+Q: What pros/cons you considered from the point explained in the class
+A: PROS: Few code conditions
+   PROS: No import/include files/classes/libraries
+   PROS: No ;
+   PROS: There is funtionality available to be re-used
+   CONS: Define your own guidelines
+      
+Q: According what we talked today, what are the 3 testing tiers?
+Services
+Backend
+UI testing
