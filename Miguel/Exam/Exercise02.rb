@@ -101,7 +101,6 @@ end
 Register.instance.insertUsers
 # Perform calculations by user
 Register.instance.askUserCalculation
-# Print users
+# Print users (not perform convertion)
 puts "User Name,Id,Convertion?"
-Register.instance.register.each{|k,v| puts "#{k},#{v[0]},#{v[1]}"}
-Register.instance.register.each{|k,v| Register.instance.log "#{k},#{v[0]},#{v[1]}"}
+Register.instance.register.each{|k,v| puts "#{k},#{v[0]},#{v[1]}" if v[1]=='No'}
