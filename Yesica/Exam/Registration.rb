@@ -60,20 +60,23 @@ class Registration
 	end
 
 	def convert_distance
-		@logger.write("INFO: Perform convertion\n")
 		convertion_type = ask_for_convertion_type
 
 		print "Please enter the value to convert = "
 		value = gets.chomp.to_i
 		
 		if convertion_type == :a
+			@logger.write("INFO: Convert from millimeters to centimeters\n")
 			puts "#{value} mm represent #{convert_mm_to_cm(value)} cm"
 		elsif convertion_type == :b
+			@logger.write("INFO: From centimeters to meters\n")
 			puts "#{value} cm represent #{convert_cm_to_m(value)} m"
 		elsif convertion_type == :c
+			@logger.write("INFO: From meters to kilometers\n")
 			puts "#{value} m represent #{convert_m_to_km(value)} km"
 		else 
 			puts "The option you selected is invalid"
+			@logger.write("ERROR: Invalid conversion type was selected\n")
 		end
 	end
 
@@ -82,15 +85,18 @@ class Registration
 			perform_calculation = gets.chomp 
 			if (perform_calculation =~ /^y(es)?$/i)
 				convert_distance
+				@logger.write("INFO: Perform convertion for user: #{user_name}\n")
 			elsif (perform_calculation =~ /^n(o)?$/i)
 				puts "Goob bye #{user_name}"
 				@users_that_not_perform_calculations.push(user_name)
 			else puts "Your answer is not valid. Please try again"
+				@logger.write("ERROR: Invalid answer to perform convertion\n")
 				perform_conversion_by_user(user_name)
 			end
 	end
 
 	def perform_conversion_for_users
+		@logger.write("INFO: Iterate users hash to perform convertions for each user\n")
 		@user_hash.each {|user_id, user_name| perform_conversion_by_user(user_name)}
 	end
 end
