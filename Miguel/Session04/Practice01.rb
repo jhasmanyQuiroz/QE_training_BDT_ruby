@@ -12,18 +12,18 @@ class Person
   attr_reader :message
   attr_accessor :specialMessage
 
-  def message
-    @message = "Hi " + @name
+  def initialize(name)
+    @name = name
+    @message = "Hi #{@name}"
+    @specialMessage = ""
   end
 
-  def specialMessage
-    @specialMessage = "#{@name} #{@specialMessage}"
+  def specialMessage=(message)
+    @specialMessage = @name + ' ' + message
   end
-
 end
 
-person = Person.new
-person.name = "Miguel"
-puts person.message
-person.specialMessage = "Bye"
-puts person.specialMessage
+person = Person.new('Miguel')
+puts "#{person.message}" # Hi <name>
+person.specialMessage = "Have a nice day."
+puts "#{person.specialMessage}" # <name> Have a nice day.
